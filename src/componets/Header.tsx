@@ -31,7 +31,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className={`fixed top-0 w-full z-50 backdrop-blur-sm ${scrolled || pathname !== '/' ? 'bg-white/80 shadow text-primary' : 'text-white'}`}>
+    <header className={`fixed top-0 w-full z-50 backdrop-blur-sm transition-all duration-500 ${scrolled || pathname !== '/' ? 'bg-white shadow text-primary' : 'text-white'}`}>
       <Navbar title="Santa Ines" links={links} />
     </header>
   )
