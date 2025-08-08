@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏘️ Sitio Web - Yatzeche
 
-## Getting Started
+Un sitio web minimalista y moderno para dar a conocer la riqueza cultural del pueblo de Santa Inés Yatzeche en Oaxaca, desarrollado con NextJS y Tailwind CSS.
 
-First, run the development server:
+## 📖 Descripción
 
+Este proyecto presenta un sitio web dedicado a promover y preservar la cultura del pueblo de Santa Inés Yatzeche. El sitio web cuenta con un diseño minimalista que resalta la belleza y riqueza cultural de la comunidad.
+
+## 🛠️ Tecnologías Utilizadas
+
+| Tecnología | Versión | Propósito |
+|------------|---------|-----------|
+| NextJs | - | Framework |
+| Tailwind CSS | 4.x | Framework de estilos |
+
+## 🚀 Instalación
+
+### Opción 1: Descarga Directa
 ```bash
+# Clona el repositorio
+git clone https://github.com/laura-ramos/yatzeche-blog.git
+
+# Navega al directorio
+cd yatzeche-blog
+
+# Abre el archivo index.html en tu navegador
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estructura del Proyecto
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📑 Secciones del Sitio
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🏠 Inicio
+- Hero section con presentación del pueblo
+- Información de bienvenida
+- Grid de características principales
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🎭 Tradiciones y Costumbres
+- Festividades principales
+- Costumbres comunitarias
+- Gastronomía tradicional
 
-## Deploy on Vercel
+### 🗣️ Dialecto
+- Información sobre la lengua zapoteca
+- Ejemplos de palabras y frases
+- Preservación cultural
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🎨 Cultura
+- Manifestaciones artísticas
+- Artesanías tradicionales
+- Música y danzas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🤝 Contribución
+
+
+## 📄 Licencia
+
