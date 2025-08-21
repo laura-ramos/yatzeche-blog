@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { Post, ApiResponse } from '../lib/types/Post';
+import { Post, ApiResponse } from '../lib/types/definitions';
 
 export const usePosts = () => {
   const [posts, setPosts] = useState<Post[]>([]);

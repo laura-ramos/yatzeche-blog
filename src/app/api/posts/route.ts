@@ -1,11 +1,19 @@
 import { NextResponse } from 'next/server';
 import dbConnect from '@/lib/config/mongodb';
-import Post from '@/lib/models/Posts';
+import Post from '@/lib/models/Post';
+import { AuthenticatedRequest } from '@/lib/middleware/Auth';
+import type { NextApiResponse } from 'next';
 
-export async function GET() {
+export async function GET(req: AuthenticatedRequest) {
   try {
-    await dbConnect();
-    const posts = await Post.find({}).sort({ createdAt: -1 });
+    await dbConnect()
+
+    let query = {};
+    if (!['admin', 'editor'].includes(req.user.role)) {
+      query = { published: true };
+    }
+    
+    const posts = await Post.find(query).sort({ createdAt: -1 });
     return NextResponse.json({ success: true, data: posts });
   } catch (error) {
     return NextResponse.json(
@@ -14,6 +22,7 @@ export async function GET() {
     );
   }
 }
+
 
 export async function POST(request: Request) {
   try {
